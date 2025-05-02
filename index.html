@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realme 9 Pro (RMX3472) Custom ROMs</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="flash.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Realme 9 Pro (RMX3472) Custom ROMs</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search ROMs...">
+            <button id="search-button">Search</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#roms">ROMs</a></li>
+                <li><a href="#guides">Guides</a></li>
+                <li><a href="#device-info">Device Info</a></li>
+                <li><a href="magisk-modules.html">Magisk Modules</a></li>
+                <li><a href="lsposed-modules.html">Lsposed Modules</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="roms">
+            <h2>Custom ROM Listings</h2>
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="android-filter">Android Version:</label>
+                    <select id="android-filter">
+                        <option value="all">All</option>
+                        <option value="15">Android 15</option>
+                        <option value="14">Android 14</option>
+                        <option value="13">Android 13</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="type-filter">ROM Type:</label>
+                    <select id="type-filter">
+                        <option value="all">All</option>
+                        <option value="aosp">AOSP</option>
+                        <option value="miui">MIUI</option>
+                        <option value="pixel">Pixel-like</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="stability-filter">Stability:</label>
+                    <select id="stability-filter">
+                        <option value="all">All</option>
+                        <option value="stable">Stable</option>
+                        <option value="beta">Beta</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="maintainer-filter">Maintainer:</label>
+                    <select id="maintainer-filter">
+                        <option value="all">All</option>
+                        <option value="Vivek">Vivek</option>
+                        <option value="Sugakesshaa">Sugakesshaa</option>
+                        <option value="Megalodonzs">Megalodonzs</option>
+                        <option value="Octodroid">Octodroid</option>
+                        <option value="Nonenameiei">Nonenameiei</option>
+                        <option value="Kts998">Kts998</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="date-filter">Show by date:</label>
+                    <select id="date-filter">
+                        <option value="default">Default (New to Old)</option>
+                        <option value="new-old">New to Old</option>
+                        <option value="old-new">Old to New</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rom-grid">
+                <!-- ROM cards will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="guides">
+            <h2>Guides & Tutorials</h2>
+            <div class="guide-list">
+                <details class="guide-item">
+                    <summary class="guide-title">Unlock Bootloader</summary>
+                    <div class="guide-content">
+                        <div class="modern-guide">
+                            <div class="disclaimer-section">
+                                <h3>⚠️ Disclaimer</h3>
+                                <p>Before proceeding, please read the disclaimer below carefully to understand the risks involved.</p>
+                                <div class="disclaimer-box">
+                                    <p><strong>After unlocking your phone, ALL OF YOUR DATA WILL BE ERASED. Backup before proceeding.</strong></p>
+                                    <ul>
+                                        <li>In-depth tests may have unforeseeable impacts on your phone.</li>
+                                        <li>Some functions (e.g., camera) may not work properly with third-party firmware.</li>
+                                        <li>Security risks include data leaks and compromised functionality.</li>
+                                        <li>You may lose access to official updates.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="steps-section">
+                                <h3>📝 Steps to Unlock Bootloader</h3>
+                                <div class="step">
+                                    <h4>Preparation:</h4>
+                                    <ul>
+                                        <li>Realme 9 Pro 5G (60%+ battery)</li>
+                                        <li>USB Cable</li>
+                                        <li>PC / MacBook</li>
+                                    </ul>
+                                </div>
+
+                                <div class="step">
+                                    <h4>Step 1: Backup Your Data</h4>
+                                    <p>Unlocking will erase all data. Ensure everything is backed up.</p>
+                                </div>
+
+                                <div class="step">
+                                    <h4>Step 2: Install Unlock Tool</h4>
+                                    <p>Download the correct unlock tool APK for your Android version:</p>
+                                    <div class="download-box">
+                                        <span>Unlock APK: 2.91 MB</span>
+                                        <button class="download-btn">Download</button>
+                                    </div>
+                                </div>
+
+                                <div class="step">
+                                    <h4>Step 3: Submit Unlock Request</h4>
+                                    <ol>
+                                        <li>Open the unlock tool.</li>
+                                        <li>Click "Start applying".</li>
+                                        <li>Read the disclaimer, check the box, and submit.</li>
+                                    </ol>
+                                </div>
+
+                                <div class="step">
+                                    <h4>Step 4: Complete Unlock</h4>
+                                    <p>After approval (within ~15 minutes):</p>
+                                    <ol>
+                                        <li>Click "START DEEP TEST".</li>
+                                        <li>Connect to PC and run: <code>fastboot flashing unlock</code>.</li>
+                                        <li>Press <kbd>Volume Up</kbd> to confirm.</li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <div class="faq-section">
+                                <h3>❓ Frequently Asked Questions</h3>
+                                <div class="faq-item">
+                                    <button class="faq-question" id="relock-bootloader-btn">
+                                        <span class="faq-icon">🔧</span>
+                                        <span>How to relock the bootloader?</span>
+                                        <span class="faq-arrow">▼</span>
+                                    </button>
+                                    <div class="faq-answer" id="relock-bootloader-answer">
+                                        <li><strong>⚠️ NOTE:</strong> Relocking the bootloader is <strong>NOT RECOMMENDED</strong>, as it has a high chance of bricking your device.</li>
+                                        <p>To relock the bootloader on your Realme 9 Pro, follow these steps carefully. This process will erase all data on your device, so ensure you back up important information beforehand.</p>
+                                        <h4>🔧 Prerequisites</h4>
+                                        <ul>
+                                            <li><strong>Backup Your Data:</strong> Relocking the bootloader will wipe your device.</li>
+                                            <li><strong>Install ADB & Fastboot Tools:</strong> Download and install the Android SDK Platform Tools on your PC.</li>
+                                            <li><strong>Enable Developer Options & USB Debugging:</strong>
+                                                <ol>
+                                                    <li>Go to <code>Settings > About Phone > Version</code> and tap <code>Build Number</code> seven times to enable Developer Options.</li>
+                                                    <li>Navigate to <code>Settings > Additional Settings > Developer Options</code>, then enable <code>USB Debugging</code> and <code>OEM Unlocking</code>.</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                        <h4>🔄 Steps to Relock the Bootloader</h4>
+                                        <ol>
+                                            <li><strong>Boot into Fastboot Mode:</strong>
+                                                <ul>
+                                                    <li>Power off your device.</li>
+                                                    <li>Press and hold the <code>Volume Down</code> and <code>Power</code> buttons simultaneously until the Fastboot screen appears.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Connect to PC:</strong> Using a USB cable, connect your Realme 9 Pro to the PC.</li>
+                                            <li><strong>Open Command Prompt:</strong> Navigate to the folder where ADB & Fastboot tools are installed. Right-click inside the folder and select <code>Open Command Window Here</code> or <code>Open PowerShell Window Here</code>.</li>
+                                            <li><strong>Verify Device Connection:</strong> Type the following command and press <code>Enter</code>:
+                                                <pre><code>fastboot devices</code></pre>
+                                                Your device should be listed. If not, ensure drivers are correctly installed.
+                                            </li>
+                                            <li><strong>Relock the Bootloader:</strong> Enter the following command:
+                                                <pre><code>fastboot flashing lock</code></pre>
+                                                On your device, you'll see a prompt. Use the <code>Volume</code> buttons to highlight <code>Lock the Bootloader</code> and press the <code>Power</code> button to confirm.
+                                            </li>
+                                            <li><strong>Reboot the Device:</strong> Once the process completes, reboot your device by typing:
+                                                <pre><code>fastboot reboot</code></pre>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+
+                                <div class="faq-item">
+                                    <button class="faq-question" id="warranty-btn">
+                                        <span class="faq-icon">📜</span>
+                                        <span>Will unlocking affect my warranty?</span>
+                                        <span class="faq-arrow">▼</span>
+                                    </button>
+                                    <div class="faq-answer" id="warranty-answer">
+                                        <p>Yes, unlocking the bootloader on a Realme device typically voids the warranty — at least officially.</p>
+                                        <h4>📜 Realme's Policy (as of recent years):</h4>
+                                        <ul>
+                                            <li>Unlocking the bootloader is considered a modification of the software environment, which Realme states voids the warranty.</li>
+                                            <li>Even if you relock the bootloader later, signs of prior unlocking (like a modified bootloader status or tamper flags) might still be visible to service technicians.</li>
+                                        </ul>
+                                        <h4>🇮🇳 In India (and some other regions):</h4>
+                                        <ul>
+                                            <li>Realme previously had a bootloader unlock tool (now discontinued for newer devices), and even then:
+                                                <ul>
+                                                    <li>They clearly stated that unlocking would void the warranty.</li>
+                                                    <li>You might still get service, but not for motherboard or software-related issues under warranty.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+                <details class="guide-item">
+                    <summary class="guide-title">Install Custom Recovery (TWRP v3.7.0)</summary>
+                    <div class="guide-content">
+                        <h3>TWRP 3.7.0 | Nord 2 CE Lite/9 Pro/Q5/...</h3>
+                        <p><strong>Description:</strong><br>
+                        Quite old, but working TWRP for stock firmware</p>
+                        
+                        <h4>Installation:</h4>
+                        <ol>
+                            <li>Flash TWRP to boot partition
+                                <pre><code>fastboot flash boot example.img</code></pre>
+                            </li>
+                            <li>Reboot into recovery</li>
+                            <li>Copy boot partition image from stock firmware to device memory</li>
+                            <li>Flash it to both slots</li>
+                            <li>Go to "Advanced" and select "Flash Current TWRP"</li>
+                        </ol>
+                        
+                        <h4>Notes:</h4>
+                        <ol>
+                            <li>/data is not mounted on Android 14</li>
+                            <li>It is not recommended to install on ColorOS 15</li>
+                        </ol>
+                    </div>
+                </details>
+                <details class="guide-item">
+                    <summary class="guide-title">Flashing a Custom ROM</summary>
+                    <div class="guide-content">
+                        <ol>
+                            <li>Download the custom ROM to your device.</li>
+                            <li>Boot into recovery.</li>
+                            <li>Wipe Data, Cache, and Dalvik.</li>
+                            <li>Flash the ROM zip file.</li>
+                            <li>Reboot and enjoy!</li>
+                            <h4>NOTE: Not all custom ROMs have the same instructions, so make sure to read the instructions of the ROM you are installing.</h4>
+                        </ol>
+                    </div>
+                </details>
+                <div class="guide-item">
+                    <button class="guide-title">SafetyNet & Banking Apps Fix</button>
+                    <div class="guide-content">
+                        <ol>
+                            <li>Install Magisk and enable Zygisk.</li>
+                            <li>Use MagiskHide Props Config module to spoof device fingerprint.</li>
+                            <li>Add banking apps to Magisk DenyList.</li>
+                            <li>Clear app data for affected apps if issues persist.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="guide-item">
+                    <button class="guide-title">How to install Fastboot</button>
+                    <div class="guide-content">
+                        <div class="modern-guide">
+                            <h3>📌 Fastboot Installation Guide</h3>
+                            <p>Fastboot works when your phone is in Fastboot Mode (also known as Bootloader Mode). It's often used for flashing, unlocking bootloaders, or other low-level operations.</p>
+
+                            <div class="requirements-section">
+                                <h4>✅ Requirements</h4>
+                                <ul>
+                                    <li>A Windows, macOS, or Linux computer</li>
+                                    <li>A USB cable</li>
+                                    <li>Your phone with bootloader unlocked or unlockable</li>
+                                    <li>Phone must be booted into Fastboot Mode</li>
+                                </ul>
+                            </div>
+
+                            <div class="steps-section">
+                                <h4>🧩 Step-by-Step Guide to Install Fastboot</h4>
+
+                                <div class="step">
+                                    <h5>🔹 1. Download Platform Tools (Includes ADB and Fastboot)</h5>
+                                    <p><strong>For All Platforms:</strong></p>
+                                    <ol>
+                                        <li>Go to the official Android developer website: <a href="https://developer.android.com/tools/releases/platform-tools" target="_blank">🔗Platform Tools🔗</a></li>
+                                        <li>Download the ZIP for your OS:
+                                            <ul>
+                                                <li>Windows: <code>platform-tools-latest-windows.zip</code></li>
+                                                <li>macOS: <code>platform-tools-latest-darwin.zip</code></li>
+                                                <li>Linux: <code>platform-tools-latest-linux.zip</code></li>
+                                            </ul>
+                                        </li>
+                                        <li>Extract the ZIP file to a folder like:
+                                            <ul>
+                                                <li><code>C:\platform-tools</code> (Windows)</li>
+                                                <li><code>~/platform-tools</code> (macOS/Linux)</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+
+                                <div class="step">
+                                    <h5>🔹 2. Add Platform Tools to PATH (Optional but Recommended)</h5>
+                                    <p><strong>On Windows:</strong></p>
+                                    <ol>
+                                        <li>Press <kbd>Win + S</kbd>, search for <strong>Environment Variables</strong>.</li>
+                                        <li>Click <strong>Environment Variables</strong> under System Properties.</li>
+                                        <li>Find the <code>Path</code> variable under System variables and click <strong>Edit</strong>.</li>
+                                        <li>Click <strong>New</strong> and add the path to your extracted platform-tools folder, e.g., <code>C:\platform-tools</code>.</li>
+                                        <li>Click <strong>OK</strong> and restart your terminal/Command Prompt.</li>
+                                    </ol>
+                                    <p><strong>On macOS/Linux:</strong></p>
+                                    <ol>
+                                        <li>Add this line to your shell config file (<code>~/.bashrc</code>, <code>~/.zshrc</code>, etc.):
+                                            <pre><code>export PATH=$PATH:$HOME/platform-tools</code></pre>
+                                        </li>
+                                        <li>Then reload:
+                                            <pre><code>source ~/.bashrc  # or ~/.zshrc</code></pre>
+                                        </li>
+                                    </ol>
+                                </div>
+
+                                <div class="step">
+                                    <h5>🔹 3. Boot Your Phone into Fastboot Mode</h5>
+                                    <p><strong>Method A: Using ADB (if the phone is on and USB Debugging is enabled):</strong></p>
+                                    <pre><code>adb reboot bootloader</code></pre>
+                                    <p><strong>Method B: Manual (most phones):</strong></p>
+                                    <ol>
+                                        <li>Power off the phone.</li>
+                                        <li>Press and hold a button combo (commonly <kbd>Power + Volume Down</kbd>) until you see "Fastboot" or "Bootloader" on the screen.</li>
+                                    </ol>
+                                </div>
+
+                                <div class="step">
+                                    <h5>🔹 4. Verify Fastboot Connection</h5>
+                                    <p>Run this command:</p>
+                                    <pre><code>fastboot devices</code></pre>
+                                    <p>✅ You should see your device's serial number. If not:</p>
+                                    <ul>
+                                        <li>Make sure you're in Fastboot Mode.</li>
+                                        <li>Try a different USB port/cable.</li>
+                                        <li>On Windows, ensure drivers are installed (see below).</li>
+                                    </ul>
+                                </div>
+
+                                <div class="step">
+                                    <h5>🪟 (Windows Only) Install Fastboot Drivers</h5>
+                                    <ol>
+                                        <li>Download the Google USB Driver: <a href="https://developer.android.com/studio/run/win-usb" target="_blank">🔗 Google USB Driver</a></li>
+                                        <li>Extract the ZIP.</li>
+                                        <li>Open Device Manager.</li>
+                                        <li>Find your device (likely listed as <strong>Android</strong> or <strong>Unknown Device</strong>).</li>
+                                        <li>Right-click > <strong>Update driver</strong> > <strong>Browse my computer</strong>.</li>
+                                        <li>Select the folder with the extracted driver.</li>
+                                        <li>Complete the installation.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="guide-item">
+                    <button class="guide-title">How to install ADB</button>
+                    <div class="guide-content">
+                        <div class="modern-guide">
+                            <h3>🔧 Step-by-Step ADB Installation Guide</h3>
+                            <div class="steps-section">
+                                <h4>✅ Requirements:</h4>
+                                <ul>
+                                    <li>A Windows, macOS, or Linux computer</li>
+                                    <li>A USB cable to connect your phone</li>
+                                    <li>Your phone with Developer Options and USB Debugging enabled</li>
+                                </ul>
+
+                                <div class="step">
+                                    <h4>🧩 1. Enable Developer Options and USB Debugging on Your Phone</h4>
+                                    <ol>
+                                        <li>Go to <code>Settings > About Phone</code>.</li>
+                                        <li>Tap <code>Build Number</code> 7 times to enable Developer Options.</li>
+                                        <li>Go to <code>Settings > System > Developer Options</code>.</li>
+                                        <li>Turn on <code>USB Debugging</code>.</li>
+                                    </ol>
+                                </div>
+
+                                <div class="step">
+                                    <h4>💻 2. Install ADB on Your Computer</h4>
+                                    <h5>Option A: Install ADB via Official Platform Tools (Recommended)</h5>
+                                    <p>For Windows, macOS, and Linux:</p>
+                                    <ol>
+                                        <li>Download SDK Platform Tools from the official Android developer site:</li>
+                                        <li>Extract the ZIP file to a convenient location, e.g., <code>C:\platform-tools</code> or <code>~/platform-tools</code>.</li>
+                                    </ol>
+                                    <h5>Option B: (For Linux Users) Install via Package Manager</h5>
+                                    <p>Debian/Ubuntu:</p>
+                                    <pre><code>sudo apt update
+sudo apt install android-tools-adb android-tools-fastboot</code></pre>
+                                    <p>Arch Linux:</p>
+                                    <pre><code>sudo pacman -S android-tools</code></pre>
+                                    <p>Fedora:</p>
+                                    <pre><code>sudo dnf install android-tools</code></pre>
+                                </div>
+
+                                <div class="step">
+                                    <h4>🔗 3. Connect and Authorize Your Device</h4>
+                                    <ol>
+                                        <li>Plug your phone into your computer using a USB cable.</li>
+                                        <li>On your phone, you'll see a prompt: "Allow USB debugging?" – Tap <code>Allow</code>.</li>
+                                        <li>On your terminal, go to the <code>platform-tools</code> folder or make it globally accessible.</li>
+                                    </ol>
+                                </div>
+
+                                <div class="step">
+                                    <h4>🖥️ 4. Using ADB from Terminal</h4>
+                                    <h5>A. Navigate to ADB folder:</h5>
+                                    <pre><code>cd path/to/platform-tools</code></pre>
+                                    <h5>B. Test ADB connection:</h5>
+                                    <pre><code>./adb devices      # (macOS/Linux)
+adb devices        # (Windows)</code></pre>
+                                    <p>✅ You should see your device listed. If you see <code>unauthorized</code>, check your phone for the authorization prompt again.</p>
+                                </div>
+
+                                <div class="step">
+                                    <h4>💡 Optional: Add ADB to Your PATH</h4>
+                                    <p>This lets you run <code>adb</code> from anywhere in your terminal.</p>
+                                    <h5>On macOS/Linux:</h5>
+                                    <p>Add this to your <code>~/.bashrc</code>, <code>~/.zshrc</code>, or <code>~/.profile</code>:</p>
+                                    <pre><code>export PATH=$PATH:/path/to/platform-tools</code></pre>
+                                    <p>Then reload your shell:</p>
+                                    <pre><code>source ~/.zshrc  # or ~/.bashrc depending on your shell</code></pre>
+                                    <h5>On Windows:</h5>
+                                    <ol>
+                                        <li>Open <code>System Properties > Advanced > Environment Variables</code>.</li>
+                                        <li>Under <code>System Variables</code>, find <code>Path</code>, click <code>Edit</code>.</li>
+                                        <li>Add the path to your <code>platform-tools</code> folder, e.g., <code>C:\platform-tools</code>.</li>
+                                    </ol>
+                                </div>
+
+                                <div class="step">
+                                    <h4>🧪 Test an ADB Command</h4>
+                                    <p>Try rebooting your phone into recovery or bootloader to verify ADB works:</p>
+                                    <pre><code>adb reboot recovery
+adb reboot bootloader</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="guide-item">
+                    <button class="guide-title">How to root stock rom RMX3472</button>
+                    <div class="guide-content">
+                        <h4>Requirements:</h4>
+                        <ul>
+                            <li>Downloaded stock rom (the archived rom that has files inside: META-INF folder, payload.bin and payload_properties.txt)</li>
+                            <li>Magisk Manager Application installed</li>
+                            <li>MT Manager installed</li>
+                            <li>Developer Options settings unlocked</li>
+                            <li>USB Debugging settings enabled</li>
+                            <li>ADB and Fastboot installed in PC</li>
+                        </ul>
+                        <h4>Instructions for the phone:</h4>
+                        <ol>
+                            <li>Open MT Manager and open the downloaded stock rom</li>
+                            <li>Click on "payload.bin" file to access</li>
+                            <li>Find "boot.img" file and extract it to your internal storage</li>
+                            <li>Open Magisk Manager and tap "Install"</li>
+                            <li>Tap "Select and patch a file" option</li>
+                            <li>Select the extracted file "boot.img"</li>
+                        </ol>
+                        <h4>Instructions for PC:</h4>
+                        <ol>
+                            <li>Enter fastboot mode by opening command terminal</li>
+                            <li>Enter command: adb reboot bootloader</li>
+                            <li>After loading to bootloader, enter command: fastboot reboot fastboot</li>
+                            <li>After loading to fastbootD mode, enter command: fastboot flash boot boot.img</li>
+                            <li>If you are already in stock rom then there's no need to format data after flashing</li>
+                            <li>After flashing is done, enter command: fastboot reboot</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="device-info">
+            <h2>Device Info</h2>
+            <table style="width:100%;border-collapse:collapse;">
+                <tr><th style="text-align:left;width:180px;">Model</th><td>Realme 9 Pro (RMX3472)</td></tr>
+                <tr><th>Chipset</th><td>Qualcomm Snapdragon 695 5G</td></tr>
+                <tr><th>CPU</th><td>Octa-core (2x2.2 GHz Kryo 660 Gold & 6x1.7 GHz Kryo 660 Silver)</td></tr>
+                <tr><th>GPU</th><td>Adreno 619</td></tr>
+                <tr><th>Display</th><td>6.6" FHD+ IPS LCD, 120Hz</td></tr>
+                <tr><th>RAM</th><td>6GB / 8GB</td></tr>
+                <tr><th>Storage</th><td>128GB UFS 2.2</td></tr>
+                <tr><th>Battery</th><td>5000mAh, 33W fast charging</td></tr>
+                <tr><th>Camera (Rear)</th><td>64MP (wide) + 8MP (ultrawide) + 2MP (macro)</td></tr>
+                <tr><th>Camera (Front)</th><td>16MP</td></tr>
+                <tr><th>OS (Stock)</th><td>Android 12, Realme UI 3.0</td></tr>
+                <tr><th>Other</th><td>Side fingerprint, 5G, microSD slot, 3.5mm jack</td></tr>
+                <tr><th>Compatibility Notes</th><td>Only use ROMs marked for RMX3472. Check for firmware requirements in each ROM's instructions.</td></tr>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Realme 9 Pro Custom ROMs</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
