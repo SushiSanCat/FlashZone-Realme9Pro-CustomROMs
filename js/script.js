@@ -1513,7 +1513,6 @@ function init() {
     });
 
     initFAQs();
-    renderNews();
 }
 
 // Start the application
