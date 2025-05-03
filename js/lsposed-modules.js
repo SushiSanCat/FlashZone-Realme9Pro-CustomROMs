@@ -257,6 +257,92 @@ Always backup your system before using LSPosed modules.`,
         banner: 'assets/xDowngrader.png',
         description: 'Allows downgrading apps to previous versions, bypassing version restrictions imposed by the Play Store or system updates.'
     },
+    {
+        name: 'WiFiList',
+        size: '3.37MB',
+        version: 'v1.3.2',
+        androidRequirement: 'N/A',
+        publishedBy: 'Zachary Wander',
+        downloadLink: '#',
+        installGuide: `To activate and use an LSPosed module on an Android device, you'll need to ensure LSPosed (part of the Zygisk-based LSPosed Framework) is properly installed and that your module is compatible. Here’s a step-by-step guide:
+✅ Prerequisites:
+Rooted device (typically with Magisk)
+LSPosed installed (via Magisk module)
+LSPosed Manager app installed
+
+🔧 Step-by-Step to Activate and Use an LSPosed Module:
+1. Install the Module APK
+Download and install the LSPosed module (usually an .apk).
+Example: GravityBox, AppLocale, YouTube Vanced module, etc.
+2. Open LSPosed Manager
+Find LSPosed Manager in your app drawer and launch it.
+3. Grant Permissions
+On first launch, grant any requested permissions (such as root access).
+4. Go to the “Modules” Tab
+You’ll see all installed modules compatible with LSPosed.
+Tap 
+5. Activate the Module
+Enable the toggle.
+Choose which apps the module should hook into (usually System UI, Android, or specific apps depending on the module).
+Tap “Scope” and select the apps.
+Some modules work system-wide; others target specific apps.
+6. Reboot Your Device
+Changes won't take effect until you reboot the phone.
+
+🧪 How to Know It’s Working:
+After reboot, open the module’s app if it has one and configure settings.
+Some modules don’t have a visible UI but modify system behavior or app behavior.
+
+⚠️ Notes:
+Only use modules compatible with your Android version.
+Some modules might not work correctly if Zygisk or LSPosed is misconfigured.
+Always backup your system before using LSPosed modules.`,
+        banner: 'assets/WiFiList.png',
+        description: 'Provides detailed information about available Wi-Fi networks, including signal strength, encryption type, and channel, for advanced network management.'
+    },
+    {
+        name: 'DevOptsHide',
+        size: '557KB',
+        version: 'v3.0',
+        androidRequirement: 'Android 12+',
+        publishedBy: 'accelforce',
+        downloadLink: '#',
+        installGuide: `To activate and use an LSPosed module on an Android device, you'll need to ensure LSPosed (part of the Zygisk-based LSPosed Framework) is properly installed and that your module is compatible. Here’s a step-by-step guide:
+✅ Prerequisites:
+Rooted device (typically with Magisk)
+LSPosed installed (via Magisk module)
+LSPosed Manager app installed
+
+🔧 Step-by-Step to Activate and Use an LSPosed Module:
+1. Install the Module APK
+Download and install the LSPosed module (usually an .apk).
+Example: GravityBox, AppLocale, YouTube Vanced module, etc.
+2. Open LSPosed Manager
+Find LSPosed Manager in your app drawer and launch it.
+3. Grant Permissions
+On first launch, grant any requested permissions (such as root access).
+4. Go to the “Modules” Tab
+You’ll see all installed modules compatible with LSPosed.
+Tap 
+5. Activate the Module
+Enable the toggle.
+Choose which apps the module should hook into (usually System UI, Android, or specific apps depending on the module).
+Tap “Scope” and select the apps.
+Some modules work system-wide; others target specific apps.
+6. Reboot Your Device
+Changes won't take effect until you reboot the phone.
+
+🧪 How to Know It’s Working:
+After reboot, open the module’s app if it has one and configure settings.
+Some modules don’t have a visible UI but modify system behavior or app behavior.
+
+⚠️ Notes:
+Only use modules compatible with your Android version.
+Some modules might not work correctly if Zygisk or LSPosed is misconfigured.
+Always backup your system before using LSPosed modules.`,
+        banner: 'assets/DevOptsHide.png',
+        description: 'Shows enabled developer options as disabled per app'
+    },
 ];
 
 // Add debug logging
