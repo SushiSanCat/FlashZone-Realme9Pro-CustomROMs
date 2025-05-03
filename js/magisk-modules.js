@@ -412,6 +412,456 @@ In short, unlocking 120FPS in Call of Duty Mobile with a Magisk Module can truly
         `,
         banner: 'assets/CODM120fpsUnlocker.png'
     },
+    {
+        name: 'Zygisk-Detach',
+        size: '173KB',
+        version: 'v1.20.0',
+        androidRequirement: 'Android 12+',
+        publishedBy: 'j-hc',
+        downloadLink: '#',
+        installGuide: `
+📱📂Installing a .zip Magisk Module
+Download the Magisk module zip file
+From trusted sources like GitHub, XDA, or Telegram channels.
+Example file: lsposed-v1.9.2-zygisk.zip
+
+Open the Magisk app
+Go to the “Modules” tab
+Tap “Install from Storage”
+Select the downloaded .zip module
+Wait for the installation script to run
+It will show terminal-like output.
+Look for Installation successful or similar at the end.
+Tap “Reboot”
+Required for the module to activate.
+
+🔄 After Reboot:
+The module should now be active.
+Some modules have configuration UIs or require extra setup (e.g., LSPosed needs LSPosed Manager).
+
+⚠️ Troubleshooting Tips:
+If your device bootloops:
+Boot into Magisk’s Safe Mode by holding volume down while booting, or use recovery to delete the module at /data/adb/modules.
+Not all modules work on all Android versions. Always check compatibility.
+Modules may conflict with each other or with certain ROMs.
+`,
+        description: `
+Zygisk module to detach installed apps from Play Store, hooking binder
+        `,
+        banner: 'assets/zygisk-detach.png'
+    },
+    {
+        name: 'Zygisk Next',
+        size: '3.36MB',
+        version: 'v1.2.8',
+        androidRequirement: 'Android 12+',
+        publishedBy: 'Dr-TSNG',
+        downloadLink: '#',
+        installGuide: `
+📱📂Installing a .zip Magisk Module
+Download the Magisk module zip file
+From trusted sources like GitHub, XDA, or Telegram channels.
+Example file: lsposed-v1.9.2-zygisk.zip
+
+Open the Magisk app
+Go to the “Modules” tab
+Tap “Install from Storage”
+Select the downloaded .zip module
+Wait for the installation script to run
+It will show terminal-like output.
+Look for Installation successful or similar at the end.
+Tap “Reboot”
+Required for the module to activate.
+
+🔄 After Reboot:
+The module should now be active.
+Some modules have configuration UIs or require extra setup (e.g., LSPosed needs LSPosed Manager).
+
+⚠️ Troubleshooting Tips:
+If your device bootloops:
+Boot into Magisk’s Safe Mode by holding volume down while booting, or use recovery to delete the module at /data/adb/modules.
+Not all modules work on all Android versions. Always check compatibility.
+Modules may conflict with each other or with certain ROMs.
+`,
+        description: `
+Standalone implementation of Zygisk
+
+Zygisk Next
+Standalone implementation of Zygisk, providing Zygisk API support for KernelSU and a replacement of Magisk's built-in Zygisk.
+
+Copyright Notice
+Copyright © 2024 Zygisk Next developers. All rights reserved.
+
+The software Zygisk Next, starting from version v4-0.9.2, is no longer under the GPL-3.0 License. Instead, all rights to the software are reserved by the owner.
+
+The following conditions now apply:
+
+No Modifications: The software may not be modified in any way. This includes but is not limited to changing, adding, or removing any part of the software's code or functionality.
+
+No Redistribution: The software may not be redistributed in any form. This includes but is not limited to renaming, selling, or including the software as part of another project.
+
+No Picking: No parts, pieces, or components of the software may be extracted and submitted to other projects. This includes, but is not limited to, code snippets, functions, and released binaries.
+
+No Claim to Succession: Any fork of the software that was created before the license change may not claim to be an official or unofficial successor to the project. This includes but is not limited to using the project's name, branding, or reputation to imply a connection to the original project.
+
+Requirements
+General
+No multiple root implementation installed
+KernelSU
+Minimal KernelSU version: 10940
+Minimal KernelSU Manager (ksud) version: 11575
+Magisk
+Minimal version: 26402
+Built-in Zygisk turned off
+Compatibility
+Zygisk Next only guarantees the same behavior of Zygisk API, but will NOT ensure Magisk's internal features.
+        `,
+        banner: 'assets/ZygiskNext.png'
+    },
+    {
+        name: 'Zygisk Assistant',
+        size: '950KB',
+        version: 'v2.1.4',
+        androidRequirement: 'Android 12+',
+        publishedBy: 'snake-4',
+        downloadLink: '#',
+        installGuide: `
+📱📂Installing a .zip Magisk Module
+Download the Magisk module zip file
+From trusted sources like GitHub, XDA, or Telegram channels.
+Example file: lsposed-v1.9.2-zygisk.zip
+
+Open the Magisk app
+Go to the “Modules” tab
+Tap “Install from Storage”
+Select the downloaded .zip module
+Wait for the installation script to run
+It will show terminal-like output.
+Look for Installation successful or similar at the end.
+Tap “Reboot”
+Required for the module to activate.
+
+🔄 After Reboot:
+The module should now be active.
+Some modules have configuration UIs or require extra setup (e.g., LSPosed needs LSPosed Manager).
+
+⚠️ Troubleshooting Tips:
+If your device bootloops:
+Boot into Magisk’s Safe Mode by holding volume down while booting, or use recovery to delete the module at /data/adb/modules.
+Not all modules work on all Android versions. Always check compatibility.
+Modules may conflict with each other or with certain ROMs.
+`,
+        description: `
+
+⚠️CONFLICT WITH SHAMIKO IF YOU ALREADY HAVE IT INSTALLED⚠️
+
+👾Zygisk Assistant and Shamiko are both Zygisk modules designed to hide root from applications, but they differ in their approach and source code. Zygisk Assistant is an open-source alternative to the closed-source Shamiko. While Shamiko has more features and functionalities, Zygisk Assistant is effective at hiding root unless something is directly injected into the target process, such as Xposed modules
+
+A Zygisk module to hide root for KernelSU, Magisk and APatch, designed to work on Android 5.0 and above.
+
+A Zygisk module that aims to hide the existence root and Zygisk.
+
+Report Bug · Request Feature · Latest Release
+
+About The Project
+Using the release build is recommended over the debug build. Only use debug builds if you are going to make a bug report.
+
+KernelSU & APatch users:
+Install ZygiskNext.
+Make sure the unmount setting is enabled for the target app in the KernelSU/APatch Manager.
+Disable Enforce DenyList in ZygiskNext settings if there is one.
+Magisk users:
+Update your Magisk to 27.0 or newer for better hiding capabilities. (optional)
+Turn on Zygisk in Magisk settings.
+Turn off Enforce DenyList in Magisk settings.
+Add the target app to the deny list unless you're using a Magisk fork with a white list instead.
+Contributing
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
+
+Fork the Project
+Create your Feature Branch (git checkout -b feature/FeatureName)
+Commit your Changes (git commit -m 'Add some FeatureName')
+Push to the Branch (git push origin feature/FeatureName)
+Open a Pull Request
+License
+Distributed under the MIT License. See LICENSE for more information.
+        `,
+        banner: 'assets/ZygiskAssistant.png'
+    },
+    {
+        name: 'TrickyStore',
+        size: '2.24MB',
+        version: 'v1.2.1',
+        androidRequirement: 'Android 12+',
+        publishedBy: '5ec1cff',
+        downloadLink: '#',
+        installGuide: `
+📱📂Installing a .zip Magisk Module
+Download the Magisk module zip file
+From trusted sources like GitHub, XDA, or Telegram channels.
+Example file: lsposed-v1.9.2-zygisk.zip
+
+Open the Magisk app
+Go to the “Modules” tab
+Tap “Install from Storage”
+Select the downloaded .zip module
+Wait for the installation script to run
+It will show terminal-like output.
+Look for Installation successful or similar at the end.
+Tap “Reboot”
+Required for the module to activate.
+
+🔄 After Reboot:
+The module should now be active.
+Some modules have configuration UIs or require extra setup (e.g., LSPosed needs LSPosed Manager).
+
+⚠️ Troubleshooting Tips:
+If your device bootloops:
+Boot into Magisk’s Safe Mode by holding volume down while booting, or use recovery to delete the module at /data/adb/modules.
+Not all modules work on all Android versions. Always check compatibility.
+Modules may conflict with each other or with certain ROMs.
+`,
+        description: `
+Tricky Store
+A trick of keystore. Android 10 or above is required.
+
+This module is used for modifying the certificate chain generated for android key attestation.
+
+中文 README
+
+Stop opening source
+Due to the rampant misuse and the contributions received after open-sourcing being less than expected, this module will be closed-source starting from version 1.1.0.
+
+Usage
+Flash this module and reboot.
+For more than DEVICE integrity, put an unrevoked hardware keybox.xml at /data/adb/tricky_store/keybox.xml (Optional).
+Customize target packages at /data/adb/tricky_store/target.txt (Optional).
+Enjoy!
+All configuration files will take effect immediately.
+
+keybox.xml
+format:
+
+<?xml version="1.0"?>
+<AndroidAttestation>
+    <NumberOfKeyboxes>1</NumberOfKeyboxes>
+    <Keybox DeviceID="...">
+        <Key algorithm="ecdsa|rsa">
+            <PrivateKey format="pem">
+-----BEGIN EC PRIVATE KEY-----
+...
+-----END EC PRIVATE KEY-----
+            </PrivateKey>
+            <CertificateChain>
+                <NumberOfCertificates>...</NumberOfCertificates>
+                    <Certificate format="pem">
+-----BEGIN CERTIFICATE-----
+...
+-----END CERTIFICATE-----
+                    </Certificate>
+                ... more certificates
+            </CertificateChain>
+        </Key>...
+    </Keybox>
+</AndroidAttestation>
+
+Support TEE broken devices
+Tricky Store will hack the leaf certificate by default. On TEE broken devices, this will not work because we can't retrieve the leaf certificate from TEE. In this case, we fallback to use generate key mode automatically.
+
+You can add a ! after a package name to force use generate certificate support for this package. Also, you can add a ? after a package name to force use leaf hack mode for this package.
+
+For example:
+
+# target.txt
+# use auto mode for KeyAttestation App
+io.github.vvb2060.keyattestation
+# always use leaf hack mode 
+io.github.vvb2060.mahoshojo?
+# always use certificate generating mode for gms
+com.google.android.gms!
+Customize security patch level (1.2.1+)
+Create the file /data/adb/tricky_store/security_patch.txt.
+
+Simple:
+
+# Hack os/vendor/boot security patch level
+20241101
+Advanced:
+
+# os security patch level is 202411
+system=202411
+# do not hack boot patch level
+boot=no
+# vendor patch level is 20241101 (another format)
+vendor=2024-11-01
+# default value
+# all=20241101
+# keep consistent with system prop
+# system=prop
+Note: this feature will only hack the result of KeyAttestation, it will not do resetprop, you need do it yourself.
+
+Acknowledgement
+FrameworkPatch
+BootloaderSpoofer
+KeystoreInjection
+LSPosed
+        `,
+        banner: 'assets/TrickyStore.png'
+    },
+    {
+        name: 'PlayIntegrityFix',
+        size: '174KB',
+        version: 'v19.0',
+        androidRequirement: 'Android 12+',
+        publishedBy: 'chiteroman',
+        downloadLink: '#',
+        installGuide: `
+📱📂Installing a .zip Magisk Module
+Download the Magisk module zip file
+From trusted sources like GitHub, XDA, or Telegram channels.
+Example file: lsposed-v1.9.2-zygisk.zip
+
+Open the Magisk app
+Go to the “Modules” tab
+Tap “Install from Storage”
+Select the downloaded .zip module
+Wait for the installation script to run
+It will show terminal-like output.
+Look for Installation successful or similar at the end.
+Tap “Reboot”
+Required for the module to activate.
+
+🔄 After Reboot:
+The module should now be active.
+Some modules have configuration UIs or require extra setup (e.g., LSPosed needs LSPosed Manager).
+
+⚠️ Troubleshooting Tips:
+If your device bootloops:
+Boot into Magisk’s Safe Mode by holding volume down while booting, or use recovery to delete the module at /data/adb/modules.
+Not all modules work on all Android versions. Always check compatibility.
+Modules may conflict with each other or with certain ROMs.
+`,
+        description: `
+Fix Play Integrity (and SafetyNet) verdicts.
+
+Play Integrity Fix
+This module tries to fix Play Integrity and SafetyNet verdicts to get a valid attestation.
+
+NOTE
+This module is not made to hide root, nor to avoid detections in other apps. It only serves to pass Device verdict in the Play Integrity tests and certify your device. All issues created to report a non-Google app not working will be closed without notice.
+
+Tutorial
+You will need root and Zygisk, so you must choose ONE of this three setups:
+
+Magisk with Zygisk enabled.
+KernelSU with ZygiskNext module installed.
+APatch with ZygiskNext module installed.
+After flashing and reboot your device, you can check PI and SN using these apps:
+
+Play Integrity -> https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck
+SafetyNet -> https://play.google.com/store/apps/details?id=rikka.safetynetchecker
+NOTE: if you get an error message about a limit, you need to use another app, this is because a lot of users are requesting an attestation.
+
+NOTE: SafetyNet is obsolete, more info here: https://developer.android.com/privacy-and-security/safetynet/deprecation-timeline
+
+Also, if you are using custom rom or custom kernel, be sure that your kernel name isn't blacklisted, you can check it running uname -r command. This is a list of banned strings: https://xdaforums.com/t/module-play-integrity-fix-safetynet-fix.4607985/post-89308909
+
+Verdicts
+After requesting an attestation, you should get this result:
+
+MEETS_BASIC_INTEGRITY ✅
+MEETS_DEVICE_INTEGRITY ✅
+MEETS_STRONG_INTEGRITY ❌ (Can be achieved with some additional work)
+MEETS_VIRTUAL_INTEGRITY ❌ (this is for emulators only)
+You can know more about verdicts in this post: https://xdaforums.com/t/info-play-integrity-api-replacement-for-safetynet.4479337/
+
+And in SafetyNet you should get this:
+
+basicIntegrity: true
+ctsProfileMatch: true
+evaluationType: BASIC
+A word on passing Strong Integrity
+While this module only returns passing verdicts for as far up as MEETS_DEVICE_INTEGRITY, it is possible to achieve a passing verdict for MEETS_STRONG_INTEGRITY by using 5ec1cff's TrickyStore (XDA thread). To put simply, this allows for spoofing a valid certificate chain (Often distributed as a file named keybox.xml and just called a keybox) to your device's Trusted Execution Environment (TEE) module, in addition to spoofing the bootloader as locked.
+
+However, it must be stressed that a keybox is hard to come by, given that they're leaked (Usually inadvertently) from OEMs and vendors. Even still, they are also often quite quickly revoked, due to a combination of people sending a deluge of server requests (Mostly for flexing their strong verdicts, which they probably didn't need anyway... You know who you are) and Google deploying specialised crawlers for automated detection. And, as quickly mentioned before, you'll likely won't even need one, since basic functions (NFC payments and RCS messaging... etc.) and the vast majority of apps only mandate device integrity/a spoofed locked bootloader.
+
+As for when a keybox is eventually revoked, you'll know it's happened when you're only passing MEETS_BASIC_INTEGRITY or by checking the key's validity status via vvb2060's Key Attestation Demo. At this point, you'll need to find another unrevoked keybox (Strong integrity), use the publicly available AOSP keybox (Device integrity), or just remove TrickyStore entirely (Device integrity).
+
+TL;DR: Unless it is ABSOLUTELY VITAL for your use case(s), chances are you'll be completely fine only passing up as far as MEETS_DEVICE_INTEGRITY, and not diving into this rabbit hole.
+
+NOTE: Per the upcoming changes for Play Integrity's verdicts on May 2025, by default you'll only pass MEETS_BASIC_INTEGRITY as device integrity now requires a locked bootloader on Android 13 and later. While this can be circumvented by using the spoofVendingSdk attribute (Spoofs SDK 32/Android 12) in your pif.json configuration, this will, to a varying degree, break some functionality in the Play Store (Given that this is an experimental feature of PIF) including the likes of degraded ease of navigation, and the store outright crashing whenever an app is installed/updated. YMMV, to which it probably will.
+
+Acknowledgments
+kdrag0n & Displax for the original idea.
+osm0sis for his original autopif2.sh script, and backslashxx & KOWX712 for improving it (action.sh).
+FAQ
+https://xdaforums.com/t/pif-faq.4653307/
+
+Download
+https://github.com/chiteroman/PlayIntegrityFix/releases/latest
+
+Donations
+PayPal
+        `,
+        banner: 'assets/PlayIntegrityFix.png'
+    },
+    {
+        name: 'Shamiko',
+        size: '4.75MB',
+        version: 'v1.2.1',
+        androidRequirement: 'Android 12+',
+        publishedBy: 'LSPosed',
+        downloadLink: '#',
+        installGuide: `
+📱📂Installing a .zip Magisk Module
+Download the Magisk module zip file
+From trusted sources like GitHub, XDA, or Telegram channels.
+Example file: lsposed-v1.9.2-zygisk.zip
+
+Open the Magisk app
+Go to the “Modules” tab
+Tap “Install from Storage”
+Select the downloaded .zip module
+Wait for the installation script to run
+It will show terminal-like output.
+Look for Installation successful or similar at the end.
+Tap “Reboot”
+Required for the module to activate.
+
+🔄 After Reboot:
+The module should now be active.
+Some modules have configuration UIs or require extra setup (e.g., LSPosed needs LSPosed Manager).
+
+⚠️ Troubleshooting Tips:
+If your device bootloops:
+Boot into Magisk’s Safe Mode by holding volume down while booting, or use recovery to delete the module at /data/adb/modules.
+Not all modules work on all Android versions. Always check compatibility.
+Modules may conflict with each other or with certain ROMs.
+`,
+        description: `
+
+⚠️CONFLICT WITH ZYGISK ASSISTANT IF YOU ALREADY HAVE IT INSTALLED⚠️
+
+👾Zygisk Assistant and Shamiko are both Zygisk modules designed to hide root from applications, but they differ in their approach and source code. Zygisk Assistant is an open-source alternative to the closed-source Shamiko. While Shamiko has more features and functionalities, Zygisk Assistant is effective at hiding root unless something is directly injected into the target process, such as Xposed modules
+
+Shamiko is a powerful Magisk module developed by the LSPosed team that enhances root concealment by leveraging Zygisk, Magisk’s native process injection system. Designed to work seamlessly with MagiskHide successor functionality, Shamiko hides root status, Magisk, and Zygisk from detection by apps like banking apps, games, and DRM-sensitive services.
+Unlike basic root-hiding methods, Shamiko operates at a deeper system level, giving it broader compatibility and stronger hiding capabilities—especially when used in conjunction with LSPosed or other Riru/Zygisk-based frameworks. It supports denylist mode for fine-grained app targeting but requires that Magisk’s denylist is not enforced.
+
+Key Features:
+Advanced root hiding using Zygisk
+Works with apps that detect Magisk, Zygisk, or root
+Supports selective app targeting via denylist
+Actively maintained by the LSPosed team
+
+Requirements:
+Magisk v24.0+ with Zygisk enabled
+LSPosed (optional but recommended for enhanced module integration)
+Denylist must not be enforced
+        `,
+        banner: 'assets/Shamiko.png'
+    },
 ];
 
 // Add debug logging
