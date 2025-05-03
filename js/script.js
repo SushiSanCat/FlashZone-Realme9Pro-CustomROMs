@@ -1478,6 +1478,16 @@ function initFAQs() {
     });
 }
 
+// Function to render news
+function renderNews() {
+    const newsContainer = document.createElement('div');
+    newsContainer.className = 'news-container';
+    newsContainer.innerHTML = '<h2>Latest News</h2><ul>' +
+        news.map(item => `<li><strong>${item.date}:</strong> ${item.text}</li>`).join('') +
+        '</ul>';
+    document.querySelector('main').prepend(newsContainer);
+}
+
 // Initialize the page with updated data
 function init() {
     renderRomCards(updatedRomData);
