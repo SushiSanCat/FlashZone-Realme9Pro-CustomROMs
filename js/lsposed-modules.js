@@ -254,7 +254,7 @@ Some modules don’t have a visible UI but modify system behavior or app behavio
 Only use modules compatible with your Android version.
 Some modules might not work correctly if Zygisk or LSPosed is misconfigured.
 Always backup your system before using LSPosed modules.`,
-        banner: 'assets/XDowngrader.png',
+        banner: 'assets/xDowngrader.png',
         description: 'Allows downgrading apps to previous versions, bypassing version restrictions imposed by the Play Store or system updates.'
     },
     {
