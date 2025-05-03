@@ -592,7 +592,7 @@ Ko-fi : <a href="https://ko-fi.com/vvkachooz" target="_blank" rel="noopener">her
         bugs: ['None reported'],
         downloadLink: '#',
         flashingInstructions: '#',
-        banner: 'assets/crDroid.png',
+        banner: 'assets/Crdroid.png',
         description: `
 #CRDroid #U #ROM #UNOFFICIAL #oscar
 CRDroid 10.7 | Android 14.
