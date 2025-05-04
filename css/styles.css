@@ -877,3 +877,152 @@ html {
         opacity: 0;
     }
 }
+
+/* Replace existing progress section styles */
+#feature-progress {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #23243a;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    border: 1px solid #292a3e;
+}
+
+.progress-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+}
+
+.capoo-busy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0 1rem 0;
+    padding: 0.5rem;
+    background: rgba(35,36,58,0.3);
+    border-radius: 8px;
+    border: 1px dashed #ffb300;
+}
+
+.progress-bar {
+    height: 12px;
+    background: #181A20;
+    border-radius: 6px;
+    margin: 0 0 1rem 0;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ffb300 0%, #ff8c00 100%);
+    border-radius: 6px;
+    transition: width 0.5s ease;
+}
+
+.progress-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    color: #EAEAEA;
+}
+
+.progress-text {
+    font-weight: 600;
+    color: #ffb300;
+}
+
+.progress-details {
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    margin: 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 6px;
+    background: #292a3e;
+}
+
+.feature-icon {
+    margin-right: 0.8rem;
+    font-weight: bold;
+}
+
+.feature-item.implemented {
+    border-left: 4px solid #4CAF50;
+}
+
+.feature-item.implemented .feature-icon {
+    color: #4CAF50;
+}
+
+.feature-item.not-implemented {
+    border-left: 4px solid #F44336;
+}
+
+.feature-item.not-implemented .feature-icon {
+    color: #F44336;
+}
+
+.feature-name {
+    font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Bugcat Capoo Animation Styles */
+.capoo-busy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0 1rem 0;
+    padding: 0.5rem;
+    background: rgba(35,36,58,0.3);
+    border-radius: 8px;
+    border: 1px dashed #ffb300;
+}
+
+.capoo-gif {
+    width: 100px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.capoo-text {
+    color: #ffb300;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    .capoo-busy {
+        padding: 0.8rem;
+    }
+    
+    .capoo-gif {
+        width: 80px;
+    }
+}
