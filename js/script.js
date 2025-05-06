@@ -3,6 +3,44 @@ const romData = [
     {
         name: 'LineageOS 22.2',
         androidVersion: '15',
+        updated: '05/05/2025',
+        maintainer: 'Vivek',
+        type: 'aosp',
+        stability: 'stable',
+        bugs: ['None reported'],
+        downloadLink: '#',
+        flashingInstructions: '#',
+        banner: 'assets/LineageOS.png',
+        description: `
+#LineageOS #V #ROM #UNOFFICIAL #oscar #oscarc #oscarru
+LineageOS 22.2 | Android 15.
+Updated: 05/05/'25
+
+▪️ <a href="https://www.hackneyed.site/products/oscar/lineageos-22-bleeding-edge" target="_blank" rel="noopener">oscar</a>
+▪️ <a href="https://www.hackneyed.site/products/oscarc/lineageos-22-bleeding-edge" target="_blank" rel="noopener">oscarc</a>
+▪️ <a href="https://www.hackneyed.site/products/oscarru/lineageos-22-bleeding-edge" target="_blank" rel="noopener">oscarru</a>
+
+Note:
+1. Read everything from website carefully before proceeding
+2. Report bugs with proper logs if you find any
+3. For install instructions, check download link
+4. If you love my work, consider donating.
+5. Ensure that you are on latest stock rom before flashing
+6. Play integrity passess by default
+7. Unlimited google photos available
+8. Faceunlock available
+9. 3finger swipe to screenshot available
+
+OTA IS ENABLED. YOU WILL GET NEW BUILDS THROUGH UPDATER AS SOON AS IT IS AVAILABLE
+
+Upi id : <span onclick="navigator.clipboard.writeText('vivekachooz-1@oksbi').then(() => alert('UPI ID copied!'))" style="cursor: pointer; text-decoration: underline; color: #007BFF;">vivekachooz-1@oksbi</span>
+Paypal : <a href="https://www.paypal.com/paypalme/vvkachooz" target="_blank" rel="noopener">here</a>
+Ko-fi : <a href="https://ko-fi.com/vvkachooz" target="_blank" rel="noopener">here</a>
+`
+    },
+    {
+        name: 'LineageOS 22.2',
+        androidVersion: '15',
         updated: '14/04/2025',
         maintainer: 'Vivek',
         type: 'aosp',
@@ -1476,16 +1514,6 @@ function initFAQs() {
         // Add click handler
         button.addEventListener('click', toggleFAQ);
     });
-}
-
-// Function to render news
-function renderNews() {
-    const newsContainer = document.createElement('div');
-    newsContainer.className = 'news-container';
-    newsContainer.innerHTML = '<h2>Latest News</h2><ul>' +
-        news.map(item => `<li><strong>${item.date}:</strong> ${item.text}</li>`).join('') +
-        '</ul>';
-    document.querySelector('main').prepend(newsContainer);
 }
 
 // Initialize the page with updated data
